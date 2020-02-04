@@ -1,0 +1,167 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#bg{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* image resized to the window, change with window dragging */
+#bg img{
+    height: 120vh;
+    width: 120%;
+    /* leaving some margin for translate */
+    filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#blackfilter{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 99; 
+}
+
+#main{
+    width: 300px;
+    height: 250px;
+
+    /* height: 100px; */
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#image img{
+    height: 150px;
+    width: 100%;
+    margin-top: -15px;
+    left: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#player{
+    padding: 25px;
+    color: #333;
+}
+#songTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    width: 280px;
+    position: absolute;
+    /* background-color: tomato; */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#buttons{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 280px;
+    height: 50px;
+    /* background-color: turquoise; */
+    transform: translate(-50%, -50%);
+}
+#pre, #play, #next{
+    /* width: 50px; */
+    background-color: teal;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+#pre{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+#play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#next{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-80%, -50%);
+}
+/* #buttons img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+#seek-bar{
+    width: 220px;
+    height: 5px;
+    background-color: gray;
+    border-radius: 50px;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+#fill{
+    height: 5px;
+    /* width: 40px; */
+    background-color: royalblue;
+    border-radius: 50px;
+    /* position: absolute; */
+    /* top: 91%;
+    left: 50%;
+    transform: translateX(-50%); */
+    /* z-index: 9999; */
+}
+
+#handle{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    margin-left: -3px;
+    margin-top: -3px;
+    background-color: seagreen;
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
